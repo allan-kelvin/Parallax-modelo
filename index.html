@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body, html{
+            margin: 0;
+            font: 16px "Lato", sans-serif;
+            color: #777;
+            height: 100%;
+        }
+        .conteudo{
+            color: #777;
+            background-color: white;
+            text-align: justify;
+            padding: 50px 80px;
+        }
+        h3{
+            text-transform:uppercase;
+        }
+
+        p{
+            margin-bottom: 20px;
+        }
+
+        /*Efeito Parallax*/
+        .caixa1, .caixa2, .caixa3,.caixa4{
+            height: 100%;
+            opacity: 0.5;
+            background-repeat: no-repeat;
+            /*Não deixa*/
+            background-size:cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .caixa1{
+            background-image: url(/imagens/imagem1.jpg);
+        }
+
+        .caixa2{
+            background-image: url(/imagens/imagem2.jpg);
+        }
+
+        .caixa3{
+            background-image: url(/imagens/imagem3.jpg);
+        }
+
+        .caixa4{
+            background-image: url(/imagens/imagem4.jpg);
+        }
+
+        .conteudo-titulo{
+            position:relative;
+            left: 0;
+            top: 45%;
+            width: 100%;
+            text-align: center;          
+        }
+
+        .conteudo-titulo span.titulo{
+            background-color: #111;
+            padding: 18px;
+            font-size: 25px;
+            letter-spacing: 5px;
+            color: #fff;
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="caixa1">
+        <div class="conteudo-titulo">
+            <span class="titulo">Estilo Parallax</span>
+        </div>
+    </div>
+
+    <div class="conteudo">
+       <h3>Parallax</h3>
+       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nunc elit, 
+           ultricies vel nisi non, laoreet congue quam. Nullam eleifend porttitor ante sed mollis. Etiam fringilla lorem ac nisi pretium porttitor. Integer viverra lectus nec nulla sodales iaculis. Suspendisse potenti. Fusce id urna a mauris condimentum suscipit. Pellentesque vulputate id tortor nec ullamcorper. Cras pretium tincidunt orci, elementum elementum mi pellentesque non. Mauris eleifend lorem a nisl vulputate tristique. Vivamus sit amet diam eget libero tincidunt varius. Curabitur laoreet pellentesque augue vel ultricies. Etiam tellus sapien, pellentesque id risus scelerisque, pulvinar varius massa. Curabitur sagittis semper magna nec pretium. Aenean mauris nisl, fringilla at diam fermentum, malesuada porta leo. Nunc quis dictum quam. Duis nunc nulla, finibus a erat a, rhoncus euismod ante.</p>
+    </div>
+
+    <div class="caixa2">
+        <div class="conteudo-titulo">
+            <span class="titulo">Pegando a Estrada</span>
+        </div>
+    </div>
+
+    <div class="caixa3">
+        <div class="conteudo-titulo">
+            <span class="titulo">Liberdade</span>
+        </div>
+    </div>
+
+    <div class="caixa4">
+        <div class="conteudo-titulo">
+            <span class="titulo">Montanhas</span>
+        </div>
+    </div>
+
+</body>
+</html>
